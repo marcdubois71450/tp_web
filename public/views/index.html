@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+<head>
+	<title>{{title}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/stylesheets/screen.css" media="all">
+    <link rel="stylesheet" href="/stylesheets/print.css" media="print">
+    <script src="/js/vendor/modernizr.js"></script>
+</head>
+{% endblock %}
+
+
+
+{% block menu %}
+	<ul>
+  <li><a href="#home">Voiture</a></li>
+  <li><a href="#news">Accessoire</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">À Propos</a></li>
+</ul>
+{% endblock %}
+
+
+{% block test %}
+	<div>test div </div>
+	<h1>{{title}}</h1>
+	<p>Welcome to {{title}}</p>
+{% endblock %}

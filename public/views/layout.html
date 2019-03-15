@@ -1,0 +1,15 @@
+<html>
+{% block head %}{% endblock %}
+
+
+<body>
+	{% block menu %}{% endblock %}
+
+    {% block js %}{% endblock %}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>
+    <script src="/js/main.js"></script>
+		{% block test %}{% endblock %}
+
+</body>
+</html>
