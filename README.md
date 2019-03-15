@@ -2,14 +2,6 @@
 
 Web TP Project
 
-## Devellopement
-
- npm run dev
-
-## Production
-
-npm start
-
 
 
 ### Project recovery
