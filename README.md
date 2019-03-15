@@ -1,23 +1,45 @@
-#Swig+Express=Boilerplate
+#Swig Express TP WEB Project
 
-Personal Swig+Express boilerplate for jumpstarting small webapps
+Web TP Project
 
-Node.js/Express/Swig/Sass/
+## Devellopement
 
-###Development:
-1. `Npm install`
-2. Use  `grunt nodemon` to start the development server. Nodemon will watch any server-side files and restart the server on save.
-3. Use `grunt watch` to enable to Grunt workflow for any client-side work. This will also allow the use of the Live Reload Chrome Extension as well as other registered Grunt tasks.
-4. When working on server-side. Please define routes in routes folder then declare and bind them in routes.js in the project root.
-5. When installing additional `node_modules` use `npm install module --save` in order to add the latest stable version to package.json.
+ npm run dev
 
-###Staging:
-1. If using a cloud deployment service a port will be dynamically assigned by them via the `bin/www` start-up script.
-2. For Ubuntu installations use `npm run staging` for your staging environment to start the node server. (Be mindful of multiple instances of this boilerplate on the same server as the port will clash).
+## Production
+
+npm start
 
 
-###Production:
-1. If using a cloud deployment service a port will be dynamically assigned by them via the `bin/www` start-up script.
-2. For Ubuntu installations use `npm start` for your staging environment to start the node server. (Be mindful of multiple instances of this boilerplate on the same server as the port will clash).
 
-# tp_web
+### Project recovery
+
+Clone the git repository
+```
+git clone https://github.com/marcdubois71450/tp_web.git
+```
+Move in the right folder
+```
+cd tp_web
+```
+Install the necessary packages
+```
+npm install
+```
+The project is ready to use
+
+
+### Development
+Start the project locally
+```
+npm run dev
+```
+The developement server is ready on port 80
+
+
+### Production
+Start the project in production mode
+```
+npm start
+```
+The server is ready on port 80
