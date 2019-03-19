@@ -1,44 +1,20 @@
 {
-  "name": "Swig-Express-Boilerplate",
-  "version": "0.0.1",
-  "private": true,
+  "name": "web-projet",
+  "version": "1.0.0",
+  "description": "Projet TP Web License 3 Le Bourget-Du-Lac",
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "staging": "node ./bin/staging",
-    "dev": "nodemon ./bin/www.js"
+    "start": "node ./bin/prod",
+    "dev": "nodemon ./bin/dev.js"
   },
   "dependencies": {
-    "auth": "0.0.9",
-    "body-parser": "~1.12.0",
-    "consolidate": "~0.9.1",
-    "cookie-parser": "~1.3.4",
-    "debug": "~2.1.1",
-    "express": "~4.12.2",
-    "morgan": "~1.5.1",
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "morgan": "^1.9.1",
     "path": "^0.11.14",
-    "serve-favicon": "~2.2.0",
-    "swig": "~1.0.0-rc3"
+    "swig": "^1.4.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-compass": "~0.7.0",
-    "grunt-contrib-imagemin": "~0.4.0",
-    "grunt-concurrent": "~0.4.2",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-svgmin": "~0.3.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "connect-livereload": "~0.3.1",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-html-validation": "~0.1.10",
-    "grunt-newer": "~0.6.1",
-    "grunt-contrib-htmlmin": "~0.1.3",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-nodemon": "^0.4.0"
-  },
-  "engines": {
-    "node": "0.11.x"
+    "express": "^4.16.4"
   }
 }
