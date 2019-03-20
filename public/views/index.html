@@ -1,28 +1,134 @@
 {% extends 'layout.html' %}
 
+
+
+
+
+
 {% block head %}
 <head>
 	<title>{{title}}</title>
     <meta charset="utf-8">
 		<link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="/css/style.css" media="all">
+		<link rel="stylesheet" href="/css/plus.css" media="all">
+		<link rel="stylesheet" href="/css/reseaux.css" media="all">
+		<link rel="stylesheet" href="/css/text-animation.css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script type="text/javascript" src="js/main.js"></script>
 </head>
 {% endblock %}
 
 
 
+{% block video %}
+
+<div class="header">
+	<div class="video-background">
+		    <div class="video-foreground">
+			<div id="player"></div>
+			<div class="content">
+			  <div class="content__container">
+			    <p class="content__container__text">Location de</p>
+			    <ul class="content__container__list">
+			      <li class="content__container__list__item">voitures.</li>
+			      <li class="content__container__list__item">4x4.</li>
+			      <li class="content__container__list__item">sportives.</li>
+			      <li class="content__container__list__item">citadines.</li>
+			    </ul>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
 {% block menu %}
-	<ul>
-  <li><a href="#home">Voiture</a></li>
-  <li><a href="#news">Accessoire</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li style="float:right"><a class="active" href="#about">À Propos</a></li>
+<div class="video-im"></div>
+<ul class="ul-menu">
+	<img class="logo" src="/img/favicon.png" alt="Logo LocatioVoiture" >
+  <li class="li-menu first-li"><a href="/Voiture/">Voiture</a></li>
+  <li class="li-menu other-li"><a href="#news">Accessoire</a></li>
+  <li class="li-menu other-li"><a href="#contact">Contact</a></li>
+	<li class="li-menu other-li"><a href="#more">A propos</a></li>
 </ul>
 {% endblock %}
 
 
-{% block test %}
-	<div>test div </div>
-	<h1>{{title}}</h1>
-	<p>Welcome to {{title}}</p>
+{% block best %}
+	<div class="fullbest">
+    <div class="title-best">Nos Meilleurs Voitures</div>
+		<div class="first-record">
+		<div class="record_wrap">
+				<section class="record margin-record">
+					<div class="record-arrow">
+						<img src="img/right-arrow.png">
+					</div>
+					<div id="record1" class="record-display record-display-tesla"></div>
+					<div class="record-desc">
+						<h1>Tesla Roadster</h1>
+						<p>
+							Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.
+						</p>
+					</div>
+				</section>
+				<section class="record margin-record">
+					<div class="record-arrow">
+						<img src="img/right-arrow.png">
+					</div>
+					<div id="record2" class="record-display record-display-classe-a"></div>
+					<div class="record-desc">
+						<h1>Mercedes Classe A</h1>
+						<p>
+							La Classe A associe une valeur attrayante à des valeurs Mercedes-Benz bien ancrées. L'habitacle est spacieux et l'espace est modulable.
+						</p>
+					</div>
+				</section>
+				<section class="record">
+					<div class="record-arrow">
+						<img src="img/right-arrow.png">
+					</div>
+					<div id="record3" class="record-display record-display-range-rover"></div>
+					<div class="record-desc">
+						<h1>Range Rover</h1>
+						<p>
+							Le Range Rover Sport hybride rechargeable (PHEV) est disponible en plusieurs versions conçues pour répondre à vos besoins spécifiques.
+						</p>
+					</div>
+				</section>
+
+			</div>
+  </div>
+
+
+</div>
+ </div>
+{% endblock %}
+
+
+
+
+
+
+{% block reseaux %}
+
+		<div class="fullreseaux">
+        <h2 class="title-reseaux">Nos Réseaux</h2>
+        <div class="main-reseaux">
+          <a href="https://www.instagram.com/" target="_blank" class="instagram"></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="linkedin" target="_blank"></a>
+          <a href="https://www.leboncoin.fr/" target="_blank" class="leboncoin"></a>
+          <a href="https://www.youtube.com/" target="_blank" class="youtube"></a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block plus %}
+
+		<div class="fullplus">
+       <div class="plus">LocationVoiture. ©  TP Web Projet - License 3 Le Bourget-Du-Lac</div>
+    </div>
 {% endblock %}
