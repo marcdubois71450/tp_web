@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -13,7 +14,6 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-
 }
 
 #home{
@@ -240,7 +240,10 @@ body {
 }
 
 
-
+.mymore{
+  margin: 80px;
+  text-align: center;
+}
 
 
 #rs{

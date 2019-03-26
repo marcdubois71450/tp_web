@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 require("./routes")(app);
 
 app.use(function(req, res, next) {
-  var err = new Error('Erreur 404. Tu ne sais pas taper un URL !');
+  var err = new Error('Erreur 404!');
   err.status = 404;
   next(err);
 });

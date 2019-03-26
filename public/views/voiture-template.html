@@ -1,0 +1,45 @@
+{% extends 'layout-voiture-template.html' %}
+
+
+{% block head %}
+<head>
+	<title>{{title}}</title>
+    <meta charset="utf-8">
+		<link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/style.css" media="all">
+		<link rel="stylesheet" href="../css/plus.css" media="all">
+		<link rel="stylesheet" href="../css/reseaux.css" media="all">
+		<link rel="stylesheet" href="../css/text-animation.css" media="all">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script type="text/javascript" src="../js/main.js"></script>
+</head>
+{% endblock %}
+
+
+{% block menu %}
+<ul class="ul-menu">
+	<a href="./.."><img class="logo" src="/img/favicon.png" alt="Logo LocatioVoiture" ></a>
+  <li class="li-menu first-li"><a href="#">Voiture</a></li>
+  <li class="li-menu other-li"><a href="#news">Accessoire</a></li>
+  <li class="li-menu other-li"><a href="#contact">Contact</a></li>
+	<li class="li-menu other-li"><a href="#more">A propos</a></li>
+</ul>
+{% endblock %}
+
+
+{% block more %}
+	<div>
+
+	</div>
+
+{% endblock %}
+
+
+
+{% block plus %}
+
+		<div class="fullplusblack">
+       <div class="plus">LocationVoiture. ©  TP Web Projet - License 3 Le Bourget-Du-Lac</div>
+    </div>
+
+{% endblock %}
