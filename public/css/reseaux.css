@@ -1,71 +1,63 @@
-.fullreseaux
-{
-	width: 100%;
-	background-color: #262626;
-	color: white;
+.fullreseaux {
+  width: 100%;
+  background-color: #262626;
+  color: white;
   height: 300px;
   margin-top: 0;
 }
 
-.title-reseaux
-{
-	padding-top: 30px;
-	padding-left: 10%;
-	font-size: 4vw;
+.title-reseaux {
+  padding-top: 30px;
+  padding-left: 10%;
+  font-size: 4vw;
   margin: 0;
 }
 
-.main-reseaux
-{
-	width: 70%;
-	margin-left: 15%;
-	text-align: center;
-	padding-top: 40px;
+.main-reseaux {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  padding-top: 40px;
   height: 150px;
-
 }
 
-.instagram
-{
-	background: url("../img/instagram.png");
-	background-size: 75%;
-	background-repeat: no-repeat;
-	float: left;
-	width: 15%;
-	height: 100px;
-	margin-right: 10%;
+.instagram {
+  background: url("../img/instagram.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  float: left;
+  width: 15%;
+  height: 100px;
+  margin-right: 10%;
   margin-left: 6%;
 }
 
-.linkedin
-{
-	background: url("../img/linkedin.png");
-	background-size: 50%;
-	background-repeat: no-repeat;
-	float: left;
-	width: 20%;
+.linkedin {
+  background: url("../img/linkedin.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  float: left;
+  width: 20%;
   height: 100px;
-	margin-right: 7%;
+  margin-right: 7%;
 }
 
-.leboncoin
-{
-	background: url("../img/leboncoin.png");
-	background-size: 60%;
-	background-repeat: no-repeat;
-	float: left;
-	width: 20%;
+.leboncoin {
+  background: url("../img/leboncoin.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  float: left;
+  width: 20%;
   height: 100px;
-	margin-right: 6%;
+  margin-right: 6%;
   margin-top: -5px;
 }
 
-.youtube
-{
-	background: url("../img/youtube.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	float: left;
-	width: 15%;
+.youtube {
+  background: url("../img/youtube.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  float: left;
+  width: 15%;
   height: 100px;
 }

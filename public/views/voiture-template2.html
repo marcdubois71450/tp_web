@@ -1,8 +1,9 @@
-{% extends 'layout-more.html' %}
+{% extends 'layout-voiture-template.html' %}
 
 
 
 <!-----------------------Block Header-------------------->
+
 
 {% block head %}
 
@@ -13,13 +14,12 @@
 	<link rel="stylesheet" href="../css/style.css" media="all">
 	<link rel="stylesheet" href="../css/plus.css" media="all">
 	<link rel="stylesheet" href="../css/reseaux.css" media="all">
+	<link rel="stylesheet" href="../css/VoitureTemplate.css" media="all">
 	<link rel="stylesheet" href="../css/text-animation.css" media="all">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script type="text/javascript" src="../js/main.js"></script>
 </head>
-
 {% endblock %}
-
 
 
 
@@ -27,40 +27,55 @@
 <!-----------------------Block Menu-------------------->
 
 {% block menu %}
-
 <ul class="ul-menu">
-	<a href="./.."><img class="logo" src="/img/favicon.png" alt="Logo LocatioVoiture"></a>
+	<a href="/"><img class="logo" src="/img/favicon.png" alt="Logo LocatioVoiture"></a>
 	<li class="li-menu first-li"><a href="/Voiture">Voiture</a></li>
 	<li class="li-menu other-li"><a href="/Contact">Contact</a></li>
-	<li class="li-menu other-li"><a href="#">A propos</a></li>
+	<li class="li-menu other-li"><a href="/More">A propos</a></li>
 </ul>
-
 {% endblock %}
 
 
 
 
-<!-----------------------Block Carte Google Maps + Texte -------------------->
 
-{% block best %}
+<!-----------------------Block Detail Voituire-------------------->
 
-<div class="more">
-	<iframe
-		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.4728182704976!2d6.151259815582297!3d46.20104847911658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c65612931c5a3%3A0xd84ed0d3ad1b036!2sTesla+Shop+Geneva!5e0!3m2!1sfr!2sfr!4v1553597061442"
-		width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-	<div class="mymore">
-		Etudiant en Licence 3, nous avons réalisé ce site pour un projet Web en TP. </div>
+{% block more %}
+<div>
+	<div style="float: left; width:60%;">
+		<img class="VoitureTemplateImg" src="/img/classe_a.jpg" alt="Voiture">
+	</div>
+	<div style="float: left; width:40%; height:450px;">
+		<div class="detail">
+			<br />
+			Prix du vehicule : {{prix}}€/Jour
+			<br /><br />
+			Loueur : {{auteur}}
+			<br /><br />
+			Date de mise en ligne : {{date}}
+			<br /><br />
+			Modele du vehicule : {{modele}}
+			<br /><br />
+			Plaque d'immatriculation : {{immatriculation}}
+			<br /><br />
+			Reduction ce mois-ci : {{reduction}}%
+		</div>
+	</div>
 </div>
 
 {% endblock %}
 
 
 
+
+
 <!-----------------------Block Signature-------------------->
+
 
 {% block plus %}
 
-<div class="fullplusblackmore">
+<div class="fullplusblack_template">
 	<div class="plus">LocationVoiture. © TP Web Projet - License 3 Le Bourget-Du-Lac</div>
 </div>
 

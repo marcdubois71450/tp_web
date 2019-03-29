@@ -1,212 +1,109 @@
 {% extends 'layout-voiture.html' %}
 
 
+<!-----------------------Block Header-------------------->
+
 {% block head %}
+
 <head>
 	<title>{{title}}</title>
-    <meta charset="utf-8">
-		<link rel="icon" type="image/png" href="../img/favicon.png" />
-    <link rel="stylesheet" href="../css/style.css" media="all">
-		<link rel="stylesheet" href="../css/plus.css" media="all">
-		<link rel="stylesheet" href="../css/reseaux.css" media="all">
-		<link rel="stylesheet" href="../css/text-animation.css" media="all">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-		<script type="text/javascript" src="../js/main.js"></script>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+	<link rel="stylesheet" href="../css/style.css" media="all">
+	<link rel="stylesheet" href="../css/plus.css" media="all">
+	<link rel="stylesheet" href="../css/reseaux.css" media="all">
+	<link rel="stylesheet" href="../css/text-animation.css" media="all">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script type="text/javascript" src="../js/main.js"></script>
 </head>
+
 {% endblock %}
 
+
+
+
+
+<!-----------------------Block Menu-------------------->
 
 {% block menu %}
+
 <ul class="ul-menu">
-	<a href="./.."><img class="logo" src="/img/favicon.png" alt="Logo LocatioVoiture" ></a>
-  <li class="li-menu first-li"><a href="#">Voiture</a></li>
-  <li class="li-menu other-li"><a href="#news">Accessoire</a></li>
-  <li class="li-menu other-li"><a href="/Contact">Contact</a></li>
+	<a href="./.."><img class="logo" src="/img/favicon.png" alt="Logo LocatioVoiture"></a>
+	<li class="li-menu first-li"><a href="#">Voiture</a></li>
+	<li class="li-menu other-li"><a href="/Contact">Contact</a></li>
 	<li class="li-menu other-li"><a href="/More">A propos</a></li>
 </ul>
+
 {% endblock %}
 
 
+
+
+<!-----------------------Block "Toutes Nos Voitures"-------------------->
+
 {% block best %}
-	<div class="fullbest">
-    <div class="title-best">Toutes nos voitures</div>
-		<div class="first-record">
+
+<div class="fullbest">
+	<div class="title-best">Toutes nos voitures</div>
+	<div class="first-record">
 		<div class="record_wrap">
-				<section class="record margin-record">
+			<section class="record margin-record">
+				<a href="/Voiture/Tesla" style="text-decoration:none;color:#000">
 					<div class="record-arrow">
 						<img src="img/right-arrow.png">
 					</div>
 					<div id="record1" class="record-display record-display-tesla"></div>
 					<div class="record-desc">
-						<h1>Tesla Roadster</h1>
+						<h1>{{modele1}}</h1>
 						<p>
 							Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.
 						</p>
 					</div>
-				</section>
-				<section class="record margin-record">
+				</a>
+			</section>
+			<section class="record margin-record">
+				<a href="/Voiture/Classe_A" style="text-decoration:none;color:#000">
 					<div class="record-arrow">
 						<img src="img/right-arrow.png">
 					</div>
 					<div id="record2" class="record-display record-display-classe-a"></div>
 					<div class="record-desc">
-						<h1>Mercedes Classe A</h1>
+						<h1>{{modele3}}</h1>
 						<p>
 							La Classe A associe une valeur attrayante à des valeurs Mercedes-Benz bien ancrées. L'habitacle est spacieux et l'espace est modulable.
 						</p>
 					</div>
-				</section>
-				<section class="record">
+				</a>
+			</section>
+			<section class="record">
+				<a href="/Voiture/Range_Rover" style="text-decoration:none;color:#000">
 					<div class="record-arrow">
 						<img src="img/right-arrow.png">
 					</div>
 					<div id="record3" class="record-display record-display-range-rover"></div>
 					<div class="record-desc">
-						<h1>Range Rover</h1>
+						<h1>{{modele2}}</h1>
 						<p>
 							Le Range Rover Sport hybride rechargeable (PHEV) est disponible en plusieurs versions conçues pour répondre à vos besoins spécifiques.
 						</p>
 					</div>
-				</section>
-
-			</div>
-  </div>
-	<div class="second-record">
-	<div class="record_wrap">
-			<section class="record margin-record">
-				<div class="record-arrow">
-					<img src="img/right-arrow.png">
-				</div>
-				<div id="record1" class="record-display record-display-tesla"></div>
-				<div class="record-desc">
-					<h1>Tesla Roadster</h1>
-					<p>
-						Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.
-					</p>
-				</div>
+				</a>
 			</section>
-			<section class="record margin-record">
-				<div class="record-arrow">
-					<img src="img/right-arrow.png">
-				</div>
-				<div id="record2" class="record-display record-display-classe-a"></div>
-				<div class="record-desc">
-					<h1>Mercedes Classe A</h1>
-					<p>
-						La Classe A associe une valeur attrayante à des valeurs Mercedes-Benz bien ancrées. L'habitacle est spacieux et l'espace est modulable.
-					</p>
-				</div>
-			</section>
-			<section class="record">
-				<div class="record-arrow">
-					<img src="img/right-arrow.png">
-				</div>
-				<div id="record3" class="record-display record-display-range-rover"></div>
-				<div class="record-desc">
-					<h1>Range Rover</h1>
-					<p>
-						Le Range Rover Sport hybride rechargeable (PHEV) est disponible en plusieurs versions conçues pour répondre à vos besoins spécifiques.
-					</p>
-				</div>
-			</section>
-
 		</div>
-</div>
-<div class="first-record">
-<div class="record_wrap">
-		<section class="record margin-record">
-			<div class="record-arrow">
-				<img src="img/right-arrow.png">
-			</div>
-			<div id="record1" class="record-display record-display-tesla"></div>
-			<div class="record-desc">
-				<h1>Tesla Roadster</h1>
-				<p>
-					Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.
-				</p>
-			</div>
-		</section>
-		<section class="record margin-record">
-			<div class="record-arrow">
-				<img src="img/right-arrow.png">
-			</div>
-			<div id="record2" class="record-display record-display-classe-a"></div>
-			<div class="record-desc">
-				<h1>Mercedes Classe A</h1>
-				<p>
-					La Classe A associe une valeur attrayante à des valeurs Mercedes-Benz bien ancrées. L'habitacle est spacieux et l'espace est modulable.
-				</p>
-			</div>
-		</section>
-		<section class="record">
-			<div class="record-arrow">
-				<img src="img/right-arrow.png">
-			</div>
-			<div id="record3" class="record-display record-display-range-rover"></div>
-			<div class="record-desc">
-				<h1>Range Rover</h1>
-				<p>
-					Le Range Rover Sport hybride rechargeable (PHEV) est disponible en plusieurs versions conçues pour répondre à vos besoins spécifiques.
-				</p>
-			</div>
-		</section>
-
 	</div>
-</div>
-<div class="first-record">
-<div class="record_wrap">
-		<section class="record margin-record">
-			<div class="record-arrow">
-				<img src="img/right-arrow.png">
-			</div>
-			<div id="record1" class="record-display record-display-tesla"></div>
-			<div class="record-desc">
-				<h1>Tesla Roadster</h1>
-				<p>
-					Le véhicule le plus rapide au monde, affichant accélération, autonomie et performances record.
-				</p>
-			</div>
-		</section>
-		<section class="record margin-record">
-			<div class="record-arrow">
-				<img src="img/right-arrow.png">
-			</div>
-			<div id="record2" class="record-display record-display-classe-a"></div>
-			<div class="record-desc">
-				<h1>Mercedes Classe A</h1>
-				<p>
-					La Classe A associe une valeur attrayante à des valeurs Mercedes-Benz bien ancrées. L'habitacle est spacieux et l'espace est modulable.
-				</p>
-			</div>
-		</section>
-		<section class="record">
-			<div class="record-arrow">
-				<img src="img/right-arrow.png">
-			</div>
-			<div id="record3" class="record-display record-display-range-rover"></div>
-			<div class="record-desc">
-				<h1>Range Rover</h1>
-				<p>
-					Le Range Rover Sport hybride rechargeable (PHEV) est disponible en plusieurs versions conçues pour répondre à vos besoins spécifiques.
-				</p>
-			</div>
-		</section>
 
+	{% endblock %}
+
+
+
+
+
+	<!-----------------------Block Signature-------------------->
+
+	{% block plus %}
+
+	<div class="fullplusblack_voiture">
+		<div class="plus">LocationVoiture. © TP Web Projet - License 3 Le Bourget-Du-Lac</div>
 	</div>
-</div>
 
-
-</div>
- </div>
-
-{% endblock %}
-
-
-
-{% block plus %}
-
-		<div class="fullplusblack">
-       <div class="plus">LocationVoiture. ©  TP Web Projet - License 3 Le Bourget-Du-Lac</div>
-    </div>
-
-{% endblock %}
+	{% endblock %}

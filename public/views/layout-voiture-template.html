@@ -3,15 +3,18 @@
 
 
 <body>
-
   {% block menu %}{% endblock %}
-	{% block more %}{% endblock %}
+  {% block more %}{% endblock %}
+  <br />
+  {% for x in obj %}
+  {% if loop.first %}<div class="accesoires-liste"><br />Listes des accesoires disponible{% endif %}
+    <div class="accesoires-liste-item">{{ x }}</div>
+    {% if loop.last %}</div>{% endif %}
+  {% endfor %}
   {% block plus %}{% endblock %}
-
-
 </body>
 
-
+<!--       Chargement du script pour le menu       -->
 <script type="text/javascript" src="js/menu.js"></script>
 
 </html>

@@ -2,13 +2,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
-
 .video-foreground, .video-background iframe {
-	z-index:-10;
+  z-index: -10;
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,8 +15,8 @@ body {
   pointer-events: none;
 }
 
-#home{
-height: 100%;
+#home {
+  height: 100%;
 }
 
 .video-im {
@@ -36,7 +35,8 @@ height: 100%;
   top: 0;
   font-size: 25px;
 }
-.logo{
+
+.logo {
   position: absolute;
   left: 30px;
   height: 80px;
@@ -46,12 +46,13 @@ height: 100%;
 .li-menu {
   float: left;
   width: 15%;
+}
 
-}
 .first-li {
-margin-left: 15%;
+  margin-left: 15%;
 }
-.other-li{
+
+.other-li {
   margin-left: 3.333334%;
 }
 
@@ -62,7 +63,6 @@ margin-left: 15%;
   padding: 14px 16px;
   text-decoration: none;
   transition: all .1s ease-in;
-
 }
 
 .li-menu a:hover {
@@ -70,37 +70,28 @@ margin-left: 15%;
   color: black;
 }
 
-
-
-.fullbest
-{
-	width: 100%;
-	background-color: white;
-	color: black;
+.fullbest {
+  width: 100%;
+  background-color: white;
+  color: black;
   height: 40vw;
 }
 
-.title-best
-{
-	padding-top: 50px;
-	padding-left: 10%;
-	font-size: 3.2vw;
+.title-best {
+  padding-top: 50px;
+  padding-left: 10%;
+  font-size: 3.2vw;
   font-weight: bold;
 }
 
-.main-best
-{
-	width: 80%;
-	float: left;
-	margin-left: 10%;
-	text-align: center;
-	margin-bottom: 50px;
-	margin-top: 20px;
+.main-best {
+  width: 80%;
+  float: left;
+  margin-left: 10%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
-
-
-
-
 
 a {
   cursor: pointer;
@@ -115,10 +106,12 @@ a {
   transition: all 250ms;
   margin: 50px;
 }
+
 .card:hover, .card:focus {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-5px);
 }
+
 .card:active {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   transform: translateY(-2px);
@@ -157,6 +150,7 @@ body {
   cursor: pointer;
   transition: box-shadow 300ms;
 }
+
 .record:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -169,6 +163,7 @@ body {
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
+
 .record-arrow img {
   width: 8%;
   height: 8%;
@@ -190,12 +185,15 @@ body {
 .record-display-tesla {
   background-image: url("../img/tesla.jpg");
 }
+
 .record-display-classe-a {
   background-image: url("../img/classe_a.jpg");
 }
+
 .record-display-range-rover {
   background-image: url("../img/range-rover.jpg");
 }
+
 .record:hover .record-display {
   height: 20%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
@@ -206,11 +204,13 @@ body {
   opacity: 0;
   transition: opacity 400ms ease-in-out 190ms;
 }
+
 .record-desc h1 {
   margin: 5px 0;
   font-size: 1.3em;
   font-weight: 700;
 }
+
 .record-desc p {
   font-size: 0.75em;
   line-height: 1.4em;
@@ -239,14 +239,20 @@ body {
   color: green;
 }
 
-
-.mymore{
+.mymore {
   margin: 80px;
   text-align: center;
 }
 
+#rs {
+  padding: 60px 0;
+  background-color: white;
+}
 
-#rs{
-	padding: 60px 0;
-	background-color: white;
+.accesoires-liste {
+  margin-left: 20px;
+}
+
+.accesoires-liste-item {
+  margin-left: 20px;
 }
